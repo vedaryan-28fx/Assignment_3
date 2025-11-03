@@ -7,6 +7,8 @@ public class Prog_10 {
         System.out.print("Enter marks: ");
         int marks = sc.nextInt();
 
+        System.out.println(" ");
+
         if (marks < 0 || marks > 100) {
             System.out.println("Invalid Marks");
         } else {
