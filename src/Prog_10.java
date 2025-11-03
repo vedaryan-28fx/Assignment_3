@@ -7,11 +7,10 @@ public class Prog_10 {
         System.out.print("Enter marks: ");
         int marks = sc.nextInt();
 
-        // Check for invalid marks first
         if (marks < 0 || marks > 100) {
-            System.out.println("Invalid Marks! Please enter marks between 0 and 100.");
+            System.out.println("Invalid Marks");
         } else {
-            // Integer division to categorize marks
+
             switch (marks / 10) {
                 case 10:
                 case 9:
