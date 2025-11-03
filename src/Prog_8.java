@@ -4,7 +4,7 @@ public class Prog_8 {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
 
-        System.out.print("Enter the number of units consumed: ");
+        System.out.println("Enter the number of units consumed: ");
         int units = sc.nextInt();
         double billAmount = 0;
 
@@ -22,6 +22,8 @@ public class Prog_8 {
         System.out.print("Do you want to pay your bill online? (Y/N): ");
         char choice = sc.next().charAt(0);
 
+        System.out.println(" ");
+
         double discount = 0;
         double amountPayable = billAmount;
 
@@ -29,10 +31,11 @@ public class Prog_8 {
         if (choice == 'Y' || choice == 'y') {
             discount = billAmount * 0.03;
             amountPayable = billAmount - discount;
-            System.out.printf("You received a 3%% online payment discount of Rs. %.2f%n", discount);
+            System.out.println("You received a 3% online payment discount of Rs. " + discount);
         }
 
-        System.out.printf("Total Electricity Bill: Rs. %.2f%n", billAmount);
-        System.out.printf("Amount Payable: Rs. %.2f%n", amountPayable);
+        System.out.println("Total Electricity Bill: Rs. " + billAmount);
+        System.out.println("Amount Payable: Rs. " + amountPayable);
+
     }
 }

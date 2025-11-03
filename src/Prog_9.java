@@ -33,7 +33,7 @@ public class Prog_9 {
 
             case '/':
                 if (num2 == 0) {
-                    System.out.println("Error: Division by zero is not allowed");
+                    System.out.println("Error: Division by zero is not allowed ");
                 } else {
                     result = num1 / num2;
                     System.out.println("Result: " + result);
