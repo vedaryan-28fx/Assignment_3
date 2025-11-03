@@ -22,7 +22,7 @@ public class Prog_5 {
                 System.out.println("It is an Isosceles triangle");
             }
             else {
-                System.out.println("It is a Scalar triangle");
+                System.out.println("It is a Scalene triangle");
             }
         }
         else {
